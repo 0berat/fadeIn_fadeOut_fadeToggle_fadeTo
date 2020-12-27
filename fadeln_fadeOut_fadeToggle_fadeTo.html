@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.5.1.min.js"   ></script>
+    <script>
+
+        $(document).ready(function () {
+
+$(".gosterBtn").click(function () {
+
+  // $(".container").fadeIn(3000);
+  $(".container").fadeIn("fast");
+  // $(".container").fadeIn("slow");
+
+});
+$(".gizleBtn").click(function () {
+
+
+
+
+    $(".container").fadeOut("slow");
+})
+
+$(".çiftBtn").click(function () {
+
+    $(".container").fadeToggle(300);
+});
+$(".fadeToBtn").click(function () {
+   $(".container").fadeTo("1000",.2,function (){
+       alert("işlem bitti");
+   }); // .8= 0.8
+})
+
+        });
+
+
+
+
+    </script>
+    <style>
+
+        .container {
+            display: none;
+            width: 300px;
+            border: 1px solid crimson;
+            padding: 10px;
+            margin: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+<button class="gosterBtn">göster</button>
+<button class="gizleBtn">gizle</button>
+<button class="çiftBtn">aç kapa</button>
+<button class="fadeToBtn">fade</button>
+<div class="container">LOREEEMEMEMEMEMEMEMME İPSUUUMM MUİEKAMUKİEMAK UEİAUMİEAKUİMLEAK MUİEKmlakuimlykamluiekaml kuiekmla kmulieka</div>
+
+
+</body>
+</html>
